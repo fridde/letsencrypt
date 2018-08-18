@@ -1,17 +1,20 @@
 {
-    "name": "imbrish/letsencrypt",
+    "name": "fridde/letsencrypt",
     "homepage": "https://github.com/imbrish/letsencrypt",
-    "description": "PHP script for automatic issuing and renewal of Let's Encrypt SSL certificates on shared hostings.",
-    "keywords": ["ssl", "certificate", "letsencrypt", "shared hosting"],
+    "description": "A Fork of imbrish/letsencrypt to enable a simple cron task to use Let's Encrypt SSL certificates on shared hostings.",
     "license": "GPL-3.0",
     "authors": [
         {
             "name": "Pawel Dominiak",
             "homepage": "https://github.com/imbrish"
+        },
+        {
+            "name": "fridde",
+            "homepage": "https://github.com/fridde"
         }
     ],
     "require": {
-        "php": ">=5.4.0",
+        "php": "^7.0",
         "kelunik/acme-client": "^0.2.13"
     },
     "autoload": {
@@ -20,14 +23,6 @@
         },
         "files" : [
             "src/helpers.php"
-        ]
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "Imbrish\\LetsEncrypt\\Composer::handle"
-        ],
-        "post-update-cmd": [
-            "Imbrish\\LetsEncrypt\\Composer::handle"
         ]
     }
 }
