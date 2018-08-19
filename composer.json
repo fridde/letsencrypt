@@ -1,7 +1,7 @@
 {
     "name": "fridde/letsencrypt",
     "homepage": "https://github.com/imbrish/letsencrypt",
-    "description": "A Fork of imbrish/letsencrypt to enable a simple cron task to use Let's Encrypt SSL certificates on shared hostings.",
+    "description": "A Fork of imbrish/letsencrypt to enable a simple cron task to update Let's Encrypt SSL certificates on shared hostings.",
     "license": "GPL-3.0",
     "authors": [
         {
